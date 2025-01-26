@@ -57,19 +57,28 @@
 
     <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#fallsUnder -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#fallsUnder"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#fallsUnder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Department"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Staff"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#isAssignedToOffice -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#isAssignedToOffice"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#isAssignedToOffice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Office"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Staff"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#isInstructorFor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#isInstructorFor"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#isInstructorFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Staff"/>
+    </owl:ObjectProperty>
     
 
 
@@ -104,6 +113,46 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorStudent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsITProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsITProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsProgramme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsMathProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsMathProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsProgramme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsPhysicsProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsPhysicsProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsProgramme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#StudyProgramme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsTeachingProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsTeachingProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#BachelorsProgramme"/>
     </owl:Class>
     
 
@@ -162,6 +211,46 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MasterStudent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersITProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersITProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersProgramme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersMathProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersMathProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersProgramme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersPhysicsProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersPhysicsProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersProgramme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#StudyProgramme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersTeachingProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersTeachingProgramme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#MastersProgramme"/>
     </owl:Class>
     
 
@@ -229,6 +318,12 @@
     <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Student -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#Student"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#StudyProgramme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juras/ontologies/2024/11/FMPH#StudyProgramme"/>
     
 
 
